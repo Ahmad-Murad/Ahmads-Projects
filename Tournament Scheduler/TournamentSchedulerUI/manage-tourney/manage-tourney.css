@@ -1,0 +1,35 @@
+@import "../bootstrap-4.3.1-dist/css/bootstrap.min.css";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
+@import "https://fonts.googleapis.com/css?family=Holtwood+One+SC";
+@import "https://fonts.googleapis.com/css?family=Kaushan+Script|Herr+Von+Muellerhoff";
+@import "https://fonts.googleapis.com/css?family=Abel";
+@import "https://fonts.googleapis.com/css?family=Istok+Web|Roboto+Condensed:700";
+/*
+ *  Flex Layout Specifics
+*/
+body {font-family: 'Istok Web', sans-serif;background: #000;background-size: cover;min-height: 100%;margin: 0;}
+.hero {position:relative; text-align: center; overflow: hidden; color: #fcfcfc; }
+.hero h1 {font-family: 'Holtwood One SC', serif;font-weight: normal;font-size: 2.4em;margin:0 0 20px; text-shadow:0 0 12px rgba(0, 0, 0, 0.5);text-transform: uppercase;letter-spacing:-1px;}
+.hero p {font-family: 'Abel', sans-serif;text-transform: uppercase; color: #5CCA87; letter-spacing: 6px;text-shadow:0 0 12px rgba(0, 0, 0, 0.5);font-size: 3.2em;}
+.hero-wrap {padding: 3.5em 10px;}
+.hero p.intro {font-family: 'Holtwood One SC', serif;text-transform: uppercase;letter-spacing: 1px;font-size: 3em;margin-bottom:-40px;}
+.hero p.year {color: #fff; letter-spacing: 20px; font-size: 34px; margin: -25px 0 25px;}
+.hero p.year i {font-size: 14px;vertical-align: middle;}
+#bracket {overflow:hidden;background-color: #e1e1e1;background-color:rgba(225,225,225,0.9);padding-top: 20px;font-size: 12px;padding: 40px 0;}
+.container {max-width: 1100px;margin: 0 auto;display:block;display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: -webkit-flex;display: flex;-webkit-flex-direction:row;flex-direction: row;}
+.split {display:block;float:left;display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display:flex;width: 100%;-webkit-flex-direction:row;-moz-flex-direction:row;flex-direction:row;}
+.champion {float:left;display:block;width: 16%;-webkit-flex-direction:row;flex-direction:row;-webkit-align-self:center;align-self:center;margin-top: -15px;text-align: center;padding: 230px 0\9;} 
+.champion i {color: #a0a6a8; font-size: 45px;padding: 10px 0; }
+.round {display:block;float:left;display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;width:20%;}
+.split-one .round {margin: 0 1.5% 0 0;}
+.matchup {margin:0;width: 100%;padding: 10px 0;height:60px;-webkit-transition: all 0.2s;transition: all 0.2s;}
+.team {padding: 0 5px;margin: 3px 0;height: 25px; line-height: 25px;white-space: nowrap; overflow: hidden;position: relative;}
+.round-two .matchup {margin:0; height: 60px;padding-top: 40px; padding-bottom: 80px;}
+.round-three .matchup {margin:0; height: 60px; padding-top: 100px; padding-bottom: 140px;}
+.round-four .matchup {margin:0; height: 60px; padding-top: 220px; }
+.round-details {font-family: 'Roboto Condensed', sans-serif; font-size: 13px; color: #2C7399;text-transform: uppercase;text-align: center;height: 40px;}
+.champion li, .round li {background-color: #fff;box-shadow: none; opacity: 0.45;}
+.current li {opacity: 1;}
+.current li.team {background-color: #fff;box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);opacity: 1;}
+.final {margin-top: 3rem; margin-bottom: 4.5rem;}
+select {width: -webkit-fill-available}

@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Create Tourney</title>
+        <script src="create-tourney.js"></script>
+        <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-center">
+                <h1 class="class col-12 text-center">
+                    Create Tournament
+                </h1>
+                <form id="create-tourney" class="col-12 text-center" action="">
+                    <fieldset>
+                        <p id="tournamentName">
+                            <label for="tourneyName">Tournament Name</label>
+                            <input id="tourneyName" type="text" placeholder="Tournament Name" />
+                        </p>
+                        <div class="alert alert-danger d-none" id="nameErrorLabel"></div>
+                        <p id="numberTeams">
+                            <label for="numTeams">Number of Teams</label>
+                            <select id="numTeams" oninput="teamsUpdate()">
+                                <option value="8" selected>8</option>
+                                <option value="16">16</option>
+                            </select>
+                        </p>
+                        <p class="row" id="teamNames">
+                            <label class="col-12">Team/Player Names</label>
+                            <input class="col-5" id="team1" type="text" placeholder="team" />
+                            <label class="col-2">VS</label>
+                            <input class="col-5" id="team2" type="text" placeholder="team" />
+                            <input class="col-5" id="team3" type="text" placeholder="team" />
+                            <label class="col-2">VS</label>
+                            <input class="col-5" id="team4" type="text" placeholder="team" />
+                            <input class="col-5" id="team5" type="text" placeholder="team" />
+                            <label class="col-2">VS</label>
+                            <input class="col-5" id="team6" type="text" placeholder="team" />
+                            <input class="col-5" id="team7" type="text" placeholder="team" />
+                            <label class="col-2">VS</label>
+                            <input class="col-5" id="team8" type="text" placeholder="team" />
+                            <input class="d-none col-5" id="team9" type="text" placeholder="team" />
+                            <label class="d-none col-2">VS</label>
+                            <input class="d-none col-5" id="team10" type="text" placeholder="team" />
+                            <input class="d-none col-5" id="team11" type="text" placeholder="team" />
+                            <label class="d-none col-2">VS</label>
+                            <input class="d-none col-5" id="team12" type="text" placeholder="team" />
+                            <input class="d-none col-5" id="team13" type="text" placeholder="team" />
+                            <label class="d-none col-2">VS</label>
+                            <input class="d-none col-5" id="team14" type="text" placeholder="team" />
+                            <input class="d-none col-5" id="team15" type="text" placeholder="team" />
+                            <label class="d-none col-2">VS</label>
+                            <input class="d-none col-5" id="team16" type="text" placeholder="team" />
+                        </p>
+                    </fieldset>
+                </form>
+                <div class="col-12 row pb-1" id="tourneyViewers">
+                        <label class="d-none col alert alert-success text-center" id="viewers"></label>
+                        <label class="col-12 text-center">Additional users who can view tournament</label>
+                        <input class="col-5" id="addUser" type="text" placeholder="username"/>
+                        <label class="col-2"></label>
+                        <input class="col-5 btn btn-success" onclick="addUser()" type="button" value="Add" />
+                </div>
+                <div class="alert alert-danger d-none" id="errorLabel"></div>
+                <div class="col-12 text-center pb-2">
+                    <input type="button" class="btn btn-secondary" value="Back" onclick="back()" />
+                    <input type="button" class="btn btn-primary" value="Create" onclick="create()" id="create-button" />  
+                </div>  
+            </div>
+        </div>
+    </body>
+</html>

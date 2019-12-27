@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Main Page</title>
+        <script src="main-page.js"></script>
+        <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="row m-1">
+                <input type="button" class="btn btn-secondary" value="Log Out" onclick="logout()" />
+        </div>
+        <div class="container">
+            <div class="row flex-column text-center">
+                <div class="col p-5">
+                    <input type="button" class="btn btn-primary" value="Create New Tournament" onclick="createTourney()" />
+                </div>
+                <div class="col p-5">
+                    <input type="button" class="btn btn-primary" value="Manage Tournaments" onclick="manageTourney()" />
+                </div>
+                <div class="col p-5">
+                    <input type="button" class="btn btn-primary" value="View Tournament" onclick="viewTourney()" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

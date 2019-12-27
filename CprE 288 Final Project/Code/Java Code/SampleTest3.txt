@@ -1,0 +1,3 @@
+ Angle: 175        Width: 20       Distance: 42
+ Distance: 18      Angle: 69       Width: 7
+ Width: 11         Angle: 149      Distance: 39

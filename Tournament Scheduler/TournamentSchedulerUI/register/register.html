@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Register</title>
+        <script src="register.js"></script>
+        <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    </head>
+    <body>
+      <div class="container">
+       	<div class="row justify-content-center">
+					<h1 class="col-12 text-center">
+							Register
+					</h1>
+					<div class="alert alert-danger d-none" id="errorLabel"></div>
+					<form id="register" class="col-12 text-center" action="">
+							<fieldset>
+								<p id="fname">
+									<label for="firstname">First Name</label>
+									<input id="firstname" placeholder="first name" name="firstname" type="text" required />
+								</p>
+								<p id="lname">
+									<label for="lastname">Last Name</label>
+									<input id="lastname" placeholder="last name" name="lastname" type="text" required />
+								</p>
+								<p id="Username">
+									<label for="user">Username</label>
+									<input id="user" placeholder="username" name="user" type="text" required />
+								</p>
+								<p id="Password">
+									<label for="psw">Password</label>
+									<input id="psw" onblur="pswCheck(this.value)" placeholder="password" name="psw" type="password" required />
+									<div class="alert alert-danger d-none" id="pswLabel"></div>
+								</p>
+								<p id="Password2">
+									<label for="psw2">Re-enter Password</label>
+									<input id="psw2" onblur="pswMatch(this.value)" placeholder="re-enter password" name="psw2" type="password" required />
+									<div class="alert alert-danger d-none" id="pswMatch"></div>
+								</p>	
+							</fieldset>
+					</form>
+					<div class="col-12 text-center">
+						<input type="button" class="btn btn-secondary" value="Back" onclick="back()" />
+						<input type="button" class="btn btn-primary" value="Register" onclick="register()" id="register-button" />  
+					</div>      
+        </div>
+      </div>
+        
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Log In</title>
+        <script src="log-in.js"></script>
+        <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-center">
+                <h1 class="col-12 text-center" id="title">
+                    Tournament Scheduler
+                </h1>
+                <div class="alert alert-danger d-none" id="errorLabel"></div>
+                <form id="log-in" class="col-12 text-center" action="">
+                    <fieldset>
+                        <legend>Log In</legend>
+                        <p id="Username">
+                            <label for="user">Username</label>
+                            <input id="user" placeholder="username" name="user" type="text" required />
+                        </p>
+                        <p id="Password">
+                            <label for="psw">Password</label>
+                            <input id="psw" placeholder="password" name="psw" type="password" required />
+                        </p>  
+                    </fieldset>
+                </form> 
+                <div class="col-12 text-center">
+                    <input class="col-auto btn btn-success" type="button" value="Login" onclick="login()" id="login-button" />
+                    <input class="col-auto btn btn-primary" type="button" value="Register" onclick="register()" id="register-button" /> 
+                </div>  
+            </div>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <script src="manage-tourney.js"></script>
+        <link rel="stylesheet" href="manage-tourney.css">
+        <title>Manage Tournaments</title>
+    </head>
+</html>
+<body>
+	<header class="hero">
+		<div class="row m-1">
+			<input type="button" class="btn btn-secondary" value="Back" onclick="back()" />
+		</div>
+    <div class="hero-wrap">
+     <p class="intro" id="intro"></p>
+		 <h1 id="headline"><i class="fa fa-star"></i> Tournament <i class="fa fa-star"></i></h1>
+     <p id="tourney-name"></p>
+   </div>
+	</header>
+
+	<section id="bracket">
+	<div class="container">
+	<div class="split split-one">
+		<div class="round round-one current">
+			<div class="round-details">Round 1</div>
+			<ul class="matchup">
+				<li id="rd-1-1" class="team team-top"></li>
+				<li id="rd-1-2" class="team team-bottom"></li>
+			</ul>
+			<ul class="matchup">
+				<li id="rd-1-3" class="team team-top"></li>
+				<li id="rd-1-4" class="team team-bottom"></li>
+			</ul>
+			<ul class="matchup">
+				<li id="rd-1-5" class="team team-top"></li>
+				<li id="rd-1-6" class="team team-bottom"></li>
+			</ul>
+			<ul class="matchup">
+				<li id="rd-1-7" class="team team-top"></li>
+				<li id="rd-1-8" class="team team-bottom"></li>
+			</ul>			
+			<ul id="display-16-1" class="matchup d-none">
+				<li id="rd-1-9" class="team team-top"></li>
+				<li id="rd-1-10" class="team team-bottom"></li>
+			</ul>	
+			<ul id="display-16-2" class="matchup d-none">
+				<li id="rd-1-11" class="team team-top"></li>
+				<li id="rd-1-12" class="team team-bottom"></li>
+			</ul>	
+			<ul id="display-16-3" class="matchup d-none">
+				<li id="rd-1-13" class="team team-top"></li>
+				<li id="rd-1-14" class="team team-bottom"></li>
+			</ul>
+			<ul id="display-16-4" class="matchup d-none">
+				<li id="rd-1-15" class="team team-top"></li>
+				<li id="rd-1-16" class="team team-bottom"></li>
+			</ul>										
+		</div>	<!-- END ROUND ONE -->
+
+		<div id="rd-2" class="round round-two current">
+			<div class="round-details">Round 2</div>			
+			<ul class="matchup">
+				<li id="rd-2-1" class="team team-top">
+          <select id="matchup1" class="d-none">
+            <option id="m2-1" value=""></option>
+            <option id="m2-2" value=""></option>
+          </select>
+        </li>
+				<li id="rd-2-2" class="team team-bottom">
+					<select id="matchup2" class="d-none">
+						<option id="m2-3" value=""></option>
+						<option id="m2-4" value=""></option>
+					</select>
+				</li>
+			</ul>	
+			<ul class="matchup">
+				<li id="rd-2-3" class="team team-top">
+					<select id="matchup3" class="d-none">
+						<option id="m2-5" value=""></option>
+						<option id="m2-6" value=""></option>
+					</select>
+				</li>
+				<li id="rd-2-4" class="team team-bottom">
+					<select id="matchup4" class="d-none">
+						<option id="m2-7" value=""></option>
+						<option id="m2-8" value=""></option>
+					</select>
+				</li>
+      </ul>	
+			<ul id="display-16-5" class="matchup d-none">
+				<li id="rd-2-5" class="team team-top">
+					<select id="matchup5" class="d-none">
+						<option id="m2-9" value=""></option>
+						<option id="m2-10" value=""></option>
+					</select>
+				</li>
+				<li id="rd-2-6" class="team team-bottom">
+					<select id="matchup6" class="d-none">
+						<option id="m2-11" value=""></option>
+						<option id="m2-12" value=""></option>
+					</select>
+				</li>
+			</ul>
+			<ul id="display-16-6" class="matchup d-none">
+				<li id="rd-2-7" class="team team-top">
+					<select id="matchup7" class="d-none">
+						<option id="m2-13" value=""></option>
+						<option id="m2-14" value=""></option>
+					</select>
+				</li>
+				<li id="rd-2-8" class="team team-bottom">
+					<select id="matchup8" class="d-none">
+						<option id="m2-15" value=""></option>
+						<option id="m2-16" value=""></option>
+					</select>
+				</li>
+			</ul>										
+		</div>	<!-- END ROUND TWO -->
+		
+		<div id="rd-3" class="round round-three">
+			<div class="round-details">Round 3</div>			
+			<ul class="matchup">
+				<li id="rd-3-1" class="team team-top">
+					<select id="matchup9" class="d-none">
+						<option id="m3-1" value=""></option>
+						<option id="m3-2" value=""></option>
+					</select>
+				</li>
+				<li id="rd-3-2" class="team team-bottom">
+					<select id="matchup10" class="d-none">
+						<option id="m3-3" value=""></option>
+						<option id="m3-4" value=""></option>
+					</select>
+				</li>
+			</ul>	
+			<ul id="display-16-7" class="matchup d-none">
+				<li id="rd-3-3" class="team team-top">
+					<select id="matchup11" class="d-none">
+						<option id="m3-5" value=""></option>
+						<option id="m3-6" value=""></option>
+					</select>
+				</li>
+				<li id="rd-3-4" class="team team-bottom">
+					<select id="matchup12" class="d-none">
+						<option id="m3-7" value=""></option>
+						<option id="m3-8" value=""></option>
+					</select>
+				</li>
+			</ul>										
+        </div>	<!-- END ROUND THREE -->
+        
+        <div id="display-16-8" class="round round-four d-none">
+            <div class="round-details">Round 4</div>
+            <ul id="rd-4" class="matchup">
+							<li id="rd-4-1" class="team team-top">
+								<select id="matchup13" class="d-none">
+									<option id="m4-1" value=""></option>
+									<option id="m4-2" value=""></option>
+								</select>
+							</li>
+							<li id="rd-4-2" class="team team-bottom">
+								<select id="matchup14" class="d-none">
+									<option id="m4-3" value=""></option>
+									<option id="m4-4" value=""></option>
+								</select>
+							</li>
+            </ul>
+        </div>
+
+        <div class="champion">
+		
+            <div class="final">
+                <i class="fa fa-trophy"></i>
+                <div class="round-details">champion</div>		
+                <ul id="champion" class ="matchup championship">
+                    <li id="winner" class="team team-top">
+											<select id="matchupC" class="d-none">
+												<option id="mc-1" value=""></option>
+												<option id="mc-2" value=""></option>
+											</select>
+										</li>
+                </ul>
+            </div>	
+				</div>
+	</div> 
+	<input type="button" onclick="save()" class="btn btn-success" value="Save" />
+</div>
+	</section>
+	

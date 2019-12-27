@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Select Tourney</title>
+        <script src="select-tourney.js"></script>
+        <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    </head>
+    <body>
+      <div class="row m-1">
+        <input type="button" class="btn btn-secondary" value="Back" onclick="back()" />
+      </div>
+      <div class="container">
+        <div class="row flex-column text-center">
+          <div class="col p-3">
+            <h1 class="text-danger">Viewable Tournaments</h1>
+          </div>
+          <div class="col p-3">
+            <input type="button" onclick="tourneySelect(0)" class="btn btn-primary d-none" value="" id="btn-1" />
+          </div>
+          <div class="col p-3">
+            <input type="button" onclick="tourneySelect(1)" class="btn btn-primary d-none" value="" id="btn-2" />
+          </div>
+          <div class="col p-3">
+            <input type="button" onclick="tourneySelect(2)" class="btn btn-primary d-none" value="" id="btn-3" />
+          </div>
+          <div class="col p-3">
+            <input type="button" onclick="tourneySelect(3)" class="btn btn-primary d-none" value="" id="btn-4" />
+          </div>
+          <div class="col p-3">
+            <input type="button" onclick="tourneySelect(4)" class="btn btn-primary d-none" value="" id="btn-5" />
+          </div>
+        </div>
+      </div>
+    </div>
+    </body>
+</html>

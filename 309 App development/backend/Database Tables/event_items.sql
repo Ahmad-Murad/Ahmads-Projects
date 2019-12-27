@@ -1,0 +1,6 @@
+CREATE TABLE `event_items` (
+  `ID` int(11) DEFAULT NULL,
+  `Item` varchar(45) DEFAULT NULL,
+  KEY `Event_ID_idx` (`ID`),
+  CONSTRAINT `Event_ID` FOREIGN KEY (`ID`) REFERENCES `event` (`ID`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <script src="view-tourney.js"></script>
+        <link rel="stylesheet" href="view-tourney.css">
+        <title>View Tournaments</title>
+    </head>
+</html>
+<body>
+	<header class="hero">
+		<div class="row m-1">
+			<input type="button" class="btn btn-secondary" value="Back" onclick="back()" />
+		</div>
+    <div class="hero-wrap">
+     <p class="intro" id="intro"></p>
+		 <h1 id="headline"><i class="fa fa-star"></i> Tournament <i class="fa fa-star"></i></h1>
+     <p id="tourney-name"></p>
+   </div>
+	</header>
+
+	<section id="bracket">
+	<div class="container">
+	<div class="split split-one">
+		<div class="round round-one current">
+			<div class="round-details">Round 1</div>
+			<ul class="matchup">
+				<li id="rd-1-1" class="team team-top"></li>
+				<li id="rd-1-2" class="team team-bottom"></li>
+			</ul>
+			<ul class="matchup">
+				<li id="rd-1-3" class="team team-top"></li>
+				<li id="rd-1-4" class="team team-bottom"></li>
+			</ul>
+			<ul class="matchup">
+				<li id="rd-1-5" class="team team-top"></li>
+				<li id="rd-1-6" class="team team-bottom"></li>
+			</ul>
+			<ul class="matchup">
+				<li id="rd-1-7" class="team team-top"></li>
+				<li id="rd-1-8" class="team team-bottom"></li>
+			</ul>			
+			<ul id="display-16-1" class="matchup d-none">
+				<li id="rd-1-9" class="team team-top"></li>
+				<li id="rd-1-10" class="team team-bottom"></li>
+			</ul>	
+			<ul id="display-16-2" class="matchup d-none">
+				<li id="rd-1-11" class="team team-top"></li>
+				<li id="rd-1-12" class="team team-bottom"></li>
+			</ul>	
+			<ul id="display-16-3" class="matchup d-none">
+				<li id="rd-1-13" class="team team-top"></li>
+				<li id="rd-1-14" class="team team-bottom"></li>
+			</ul>
+			<ul id="display-16-4" class="matchup d-none">
+				<li id="rd-1-15" class="team team-top"></li>
+				<li id="rd-1-16" class="team team-bottom"></li>
+			</ul>										
+		</div>	<!-- END ROUND ONE -->
+
+		<div id="rd-2" class="round round-two">
+			<div class="round-details">Round 2</div>			
+			<ul class="matchup">
+				<li id="rd-2-1" class="team team-top">&nbsp;</li>
+				<li id="rd-2-2" class="team team-bottom">&nbsp;</li>
+			</ul>	
+			<ul class="matchup">
+				<li id="rd-2-3" class="team team-top">&nbsp;</li>
+				<li id="rd-2-4" class="team team-bottom">&nbsp;</li>
+            </ul>	
+			<ul id="display-16-5" class="matchup d-none">
+				<li id="rd-2-5" class="team team-top">&nbsp;</li>
+				<li id="rd-2-6" class="team team-bottom">&nbsp;</li>
+			</ul>
+			<ul id="display-16-6" class="matchup d-none">
+				<li id="rd-2-7" class="team team-top">&nbsp;</li>
+				<li id="rd-2-8" class="team team-bottom">&nbsp;</li>
+			</ul>										
+		</div>	<!-- END ROUND TWO -->
+		
+		<div id="rd-3" class="round round-three">
+			<div class="round-details">Round 3</div>			
+			<ul class="matchup">
+				<li id="rd-3-1" class="team team-top">&nbsp;</li>
+				<li id="rd-3-2" class="team team-bottom">&nbsp;</li>
+			</ul>	
+			<ul id="display-16-7" class="matchup d-none">
+				<li id="rd-3-3" class="team team-top">&nbsp;</li>
+				<li id="rd-3-4" class="team team-bottom">&nbsp;</li>
+			</ul>										
+        </div>	<!-- END ROUND THREE -->
+        
+        <div id="display-16-8" class="round round-four d-none">
+            <div class="round-details">Round 4</div>
+            <ul id="rd-4" class="matchup">
+              <li id="rd-4-1" class="team team-top">&nbsp;</li>
+							<li id="rd-4-2" class="team team-bottom">&nbsp;</li>
+            </ul>
+        </div>
+
+        <div class="champion">
+		
+            <div class="final">
+                <i class="fa fa-trophy"></i>
+                <div class="round-details">champion</div>		
+                <ul id="champion" class ="matchup championship">
+                    <li id="winner" class="team team-top">&nbsp;</li>
+                </ul>
+            </div>	
+        </div>
+	</div> 
+</div>
+	</section>
+	
